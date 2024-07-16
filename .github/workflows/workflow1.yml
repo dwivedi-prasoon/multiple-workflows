@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1
-        run: echo "This is Workflow 1 - Job 1"
+        shell: pwsh
+        run: |
+         echo "This is Workflow 1 - Job 1"
+         Start-Sleep -s 10
 
   job2:
     runs-on: ubuntu-latest
